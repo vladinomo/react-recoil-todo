@@ -8,7 +8,7 @@ module.exports = {
     path: resolve(__dirname, 'public')
   },
   resolve: {
-    extensions: ['.ts']
+    extensions: ['.ts', '.js']
   },
   module: {
     rules: [
