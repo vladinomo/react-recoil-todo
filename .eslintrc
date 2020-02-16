@@ -12,7 +12,6 @@
         "singleQuote": true,
         "semi": false
       }
-    ],
-    "semi": ["error", "never"]
+    ]
   }
 }
