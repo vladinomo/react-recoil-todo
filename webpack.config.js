@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { resolve } = require('path');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const { resolve } = require('path')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 module.exports = {
   context: __dirname,
@@ -23,4 +23,4 @@ module.exports = {
     ]
   },
   plugins: [new ForkTsCheckerWebpackPlugin({ eslint: true })]
-};
+}
