@@ -1,9 +1,7 @@
 {
     "editor.formatOnSave": false,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        "javascript",
-        {"language": "typescript", "autoFix": true },
-      ],
-    "files.autoSave": "off"
+    "files.autoSave": "off",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
 }
