@@ -4,11 +4,7 @@ TSプロジェクトボイラープレート
 Webpack + babel + eslint + vscode　環境用
 
 #### やることリスト
-1. babel+webpackでビルド　→　オワタ
-2. eslint効かせてVSCODEで保存時にtypecheckとコードフォーマット →　おわた
-3. webpackDevserverでホットリロード →　おわた
-4. コミット時に型チェックとリントをhuskyで
-5. 本番環境ビルド。デプロイ環境整備
+1. 本番環境ビルド。デプロイ環境整備
 
 ## 使い方
 #### 基本
@@ -20,6 +16,8 @@ localhost:8080でプロジェクト監視しながら開発
 /src以下の型チェック
 ```yarn lint```
 /src以下にLintかけてフィックス
+```yarn test```
+テスト
 
 #### for VSCode
 ESLintプラグイン入れて、とくにVSCodeのグローバル設定を何もいじってなければ、
