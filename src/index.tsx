@@ -1,7 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const App = (): JSX.Element => <div>hello!</div>
+import './style.css'
+
+const App = (): JSX.Element => {
+  return (
+    <div>
+      hello!
+      <div className="button">button</div>
+    </div>
+  )
+}
 
 // eslint-disable-next-line no-undef
 ReactDOM.render(<App />, document.querySelector('#root'))
