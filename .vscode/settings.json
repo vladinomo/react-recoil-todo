@@ -3,5 +3,7 @@
     "files.autoSave": "off",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    }
+    },
+    "stylelint.enable": true,
+    "css.validate": false
 }
