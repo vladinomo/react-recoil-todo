@@ -43,7 +43,20 @@ const TodoList: React.FC = () => {
     })
   }
 
-  return <List items={itemList} onItemCheck={onTodoChecked} />
+  const deleteTodo = (id: string): void => {
+    setTodos((todos: Todos) => {
+      const newTodos = todos.filter(todo => todo.id !== id)
+      return newTodos
+    })
+  }
+
+  return (
+    <List
+      items={itemList}
+      onItemCheck={onTodoChecked}
+      onClickItemButton={deleteTodo}
+    />
+  )
 }
 
 export { TodoList }
