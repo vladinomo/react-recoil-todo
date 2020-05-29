@@ -3,8 +3,10 @@
 http://todomvc.com/examples/typescript-react/#/active
 ⇑これと同じ要件のものをReact + Recoil + Tailwind + Typescriptで実装してみる
 
-#### やることリスト
-1. 本番環境ビルド。デプロイ環境整備
+#### このあとやるかもリスト
+1. テスト
+2. recoil#selectorのバグを踏んで使えなかったので原因究明
+3. 外部APIやlocal storageにatomの値を格納してみる
 
 ## 使い方
 #### 基本
