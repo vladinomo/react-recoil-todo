@@ -12,6 +12,8 @@ const TodoInput: React.FC = () => {
   const onChange = (value: string): void => setNewTodo(value)
 
   const onEnter = (): void => {
+    if (!newTodo.length) return
+
     setTodos((todos: Todos) => {
       return [
         ...todos,
