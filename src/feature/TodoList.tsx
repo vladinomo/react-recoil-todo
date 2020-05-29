@@ -3,10 +3,25 @@ import { useSetRecoilState, useRecoilValue } from 'recoil'
 
 import { List } from '../components/List'
 import { todoState, Todo, Todos } from '../state/todo'
+import { todofilterState, TodoFilter } from '../state/filter'
+
+const getFilteredTodos = (todos: Todos, filter: TodoFilter): Todos => {
+  switch (filter) {
+    case 'completed':
+      return todos.filter(todo => todo.status === 'complete')
+    case 'active':
+      return todos.filter(todo => todo.status === 'active')
+    case 'all':
+      return todos
+    default:
+      return todos
+  }
+}
 
 const TodoList: React.FC = () => {
-  // Todo: filter Todo by filter value
-  const filteredTodos: Todos = useRecoilValue(todoState)
+  const filter = useRecoilValue(todofilterState)
+  const allTodos = useRecoilValue(todoState)
+  const filteredTodos: Todos = getFilteredTodos(allTodos, filter)
   const setTodos = useSetRecoilState(todoState)
 
   const todosSortedByCreated = [...filteredTodos].sort((a: Todo, b: Todo) => {

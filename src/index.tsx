@@ -9,7 +9,7 @@ import { Card } from './components/Card'
 import { CardHeader } from './components/CardHeader'
 import { TodoInput } from './feature/TodoInput'
 import { TodoList } from './feature/TodoList'
-import { TodoFilter } from './components/TodoFilter'
+import { TodoFilter } from './feature/TodoFilter'
 
 const App = (): JSX.Element => {
   return (
