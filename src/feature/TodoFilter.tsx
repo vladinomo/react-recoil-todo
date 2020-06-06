@@ -3,7 +3,7 @@ import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil'
 
 import { Filter } from '../components/Filter'
 import { todoState, Todo, Todos } from '../state/todo'
-import { todofilterState } from '../state/filter'
+import { todofilterState, TodoFilter as TodoFilterValue } from '../state/filter'
 
 const selectOptions = [
   { text: 'All', value: 'all' },
@@ -26,7 +26,7 @@ const TodoFilter: React.FC = () => {
   }
   const onChangeFilter = (event: React.FormEvent<HTMLSelectElement>): void => {
     event.stopPropagation()
-    setFilter(event.currentTarget.value)
+    setFilter(event.currentTarget.value as TodoFilterValue)
   }
 
   return (

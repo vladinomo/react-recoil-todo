@@ -4,7 +4,7 @@ export type Todo = {
   id: string
   text: string
   status: `complete` | `active`
-  createdAt: string
+  createdAt: number
 }
 
 export type Todos = Todo[]
