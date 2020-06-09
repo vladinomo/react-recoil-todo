@@ -16,7 +16,7 @@ const App = (): JSX.Element => {
     <RecoilRoot>
       <MainLayout>
         <Card>
-          <CardHeader />
+          <CardHeader text="Todo List" />
           <TodoInput />
           <TodoList />
           <TodoFilter />
